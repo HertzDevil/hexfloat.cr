@@ -108,7 +108,7 @@ floating-point values.</p>
   </h2>
   
     
-      <a href="https://github.com/HertzDevil/hexfloat.cr/blob/4f17429f5d7da13812e14370f9bbaf4171ed3063/src/hexfloat.cr#L3" target="_blank">
+      <a href="https://github.com/HertzDevil/hexfloat.cr/blob/c2c116fd0cd96a23d68f098b16705ccf4bc794ff/src/hexfloat.cr#L3" target="_blank">
         hexfloat.cr
       </a>
     
@@ -256,7 +256,7 @@ Inexact literals are rounded to the nearest representable <code>Float32</code>, 
       <br/>
       <div>
         
-          [<a href="https://github.com/HertzDevil/hexfloat.cr/blob/4f17429f5d7da13812e14370f9bbaf4171ed3063/src/hexfloat.cr#L267" target="_blank">View source</a>]
+          [<a href="https://github.com/HertzDevil/hexfloat.cr/blob/c2c116fd0cd96a23d68f098b16705ccf4bc794ff/src/hexfloat.cr#L267" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -282,7 +282,7 @@ Inexact literals are rounded to the nearest representable <code>Float64</code>, 
       <br/>
       <div>
         
-          [<a href="https://github.com/HertzDevil/hexfloat.cr/blob/4f17429f5d7da13812e14370f9bbaf4171ed3063/src/hexfloat.cr#L252" target="_blank">View source</a>]
+          [<a href="https://github.com/HertzDevil/hexfloat.cr/blob/c2c116fd0cd96a23d68f098b16705ccf4bc794ff/src/hexfloat.cr#L252" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -303,7 +303,7 @@ Inexact literals are rounded to the nearest representable <code>Float64</code>, 
       <br/>
       <div>
         
-          [<a href="https://github.com/HertzDevil/hexfloat.cr/blob/4f17429f5d7da13812e14370f9bbaf4171ed3063/src/hexfloat.cr#L285" target="_blank">View source</a>]
+          [<a href="https://github.com/HertzDevil/hexfloat.cr/blob/c2c116fd0cd96a23d68f098b16705ccf4bc794ff/src/hexfloat.cr#L292" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -324,7 +324,7 @@ Inexact literals are rounded to the nearest representable <code>Float64</code>, 
       <br/>
       <div>
         
-          [<a href="https://github.com/HertzDevil/hexfloat.cr/blob/4f17429f5d7da13812e14370f9bbaf4171ed3063/src/hexfloat.cr#L303" target="_blank">View source</a>]
+          [<a href="https://github.com/HertzDevil/hexfloat.cr/blob/c2c116fd0cd96a23d68f098b16705ccf4bc794ff/src/hexfloat.cr#L310" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -348,7 +348,7 @@ Inexact literals are rounded to the nearest representable <code>Float64</code>, 
       <br/>
       <div>
         
-          [<a href="https://github.com/HertzDevil/hexfloat.cr/blob/4f17429f5d7da13812e14370f9bbaf4171ed3063/src/hexfloat.cr#L297" target="_blank">View source</a>]
+          [<a href="https://github.com/HertzDevil/hexfloat.cr/blob/c2c116fd0cd96a23d68f098b16705ccf4bc794ff/src/hexfloat.cr#L304" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -372,7 +372,7 @@ Inexact literals are rounded to the nearest representable <code>Float64</code>, 
       <br/>
       <div>
         
-          [<a href="https://github.com/HertzDevil/hexfloat.cr/blob/4f17429f5d7da13812e14370f9bbaf4171ed3063/src/hexfloat.cr#L315" target="_blank">View source</a>]
+          [<a href="https://github.com/HertzDevil/hexfloat.cr/blob/c2c116fd0cd96a23d68f098b16705ccf4bc794ff/src/hexfloat.cr#L322" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -404,12 +404,16 @@ Inexact literals are rounded to the nearest representable <code>Float64</code>, 
           <p>Converts a hexadecimal floating-point literal to a <code>Float32</code> if it ends with
 <code>f32</code>, a <code>Float64</code> otherwise.</p>
 <p><em>str</em> must be a string literal. The return type is never a union.</p>
+<pre><code class="language-crystal">x <span class="o">=</span> <span class="t">HexFloat</span>.to_f(<span class="s">&quot;0x12.34p+5&quot;</span>)     <span class="c"># =&gt; 582.5</span>
+x.<span class="k">class</span>                             <span class="c"># =&gt; Float64</span>
+x <span class="o">=</span> <span class="t">HexFloat</span>.to_f(<span class="s">&quot;0x12.34p+5_f32&quot;</span>) <span class="c"># =&gt; 582.5</span>
+x.<span class="k">class</span>                             <span class="c"># =&gt; Float32</span></code></pre>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/HertzDevil/hexfloat.cr/blob/4f17429f5d7da13812e14370f9bbaf4171ed3063/src/hexfloat.cr#L275" target="_blank">View source</a>]
+          [<a href="https://github.com/HertzDevil/hexfloat.cr/blob/c2c116fd0cd96a23d68f098b16705ccf4bc794ff/src/hexfloat.cr#L282" target="_blank">View source</a>]
         
       </div>
     </div>

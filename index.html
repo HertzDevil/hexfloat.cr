@@ -93,7 +93,10 @@ floating-point values.</p>
 <pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;hexfloat&quot;</span>
 
 <span class="t">HexFloat</span>.to_f64(<span class="s">&quot;0x12.34p+5&quot;</span>)    <span class="c"># =&gt; 582.5</span>
-<span class="t">HexFloat</span>.to_f32(<span class="s">&quot;0x3.333334p+1&quot;</span>) <span class="c"># =&gt; 6.4</span>
+<span class="t">HexFloat</span>.to_f32(<span class="s">&quot;0x3.333334p+1&quot;</span>) <span class="c"># =&gt; 6.4_f32</span>
+
+<span class="t">HexFloat</span>.to_f(<span class="s">&quot;0x12.34p+5&quot;</span>)    <span class="c"># =&gt; 582.5</span>
+<span class="t">HexFloat</span>.to_f(<span class="s">&quot;0x12.34p+5f32&quot;</span>) <span class="c"># =&gt; 582.5_f32</span>
 
 <span class="t">HexFloat</span>.to_s(<span class="n">6.125</span>)      <span class="c"># =&gt; &quot;0x1.88p+2&quot;</span>
 <span class="t">HexFloat</span>.to_s(<span class="n">-1_f32</span> <span class="o">/</span> <span class="n">3</span>) <span class="c"># =&gt; &quot;-0x1.555556p-2&quot;</span>
