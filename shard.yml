@@ -1,0 +1,9 @@
+name: hexfloat
+version: 1.0.0
+
+authors:
+  - Quinton Miller <nicetas.c@gmail.com>
+
+crystal: 1.0.0
+
+license: MIT
