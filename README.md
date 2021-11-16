@@ -1,4 +1,8 @@
-# hexfloat
+# hexfloat.cr
+
+![CI status](https://img.shields.io/github/workflow/status/HertzDevil/hexfloat.cr/CI?label=Build)
+![Docs status](https://img.shields.io/github/deployments/HertzDevil/hexfloat.cr/github-pages?label=docs)
+![License](https://img.shields.io/github/license/HertzDevil/hexfloat.cr)
 
 Provides conversion functions between hexadecimal floating-point literals and
 floating-point values.
@@ -10,7 +14,7 @@ floating-point values.
    ```yaml
    dependencies:
      hexfloat:
-       github: HertzDevil/hexfloat
+       github: HertzDevil/hexfloat.cr
    ```
 
 2. Run `shards install`
@@ -37,7 +41,7 @@ end
 
 ## Contributing
 
-1. Fork it (<https://github.com/HertzDevil/hexfloat/fork>)
+1. Fork it (<https://github.com/HertzDevil/hexfloat.cr/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

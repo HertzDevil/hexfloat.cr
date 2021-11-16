@@ -1,6 +1,8 @@
 # This CI job installs Crystal and shard dependencies, then executes `crystal spec` to run the test suite
 # More configuration options are available at https://crystal-lang.github.io/install-crystal/configurator.html
 
+name: CI
+
 on:
   push:
   pull_request:
