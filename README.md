@@ -1,11 +1,13 @@
 # hexfloat.cr
 
-![CI status](https://img.shields.io/github/workflow/status/HertzDevil/hexfloat.cr/CI?label=Build)
-![Docs status](https://img.shields.io/github/deployments/HertzDevil/hexfloat.cr/github-pages?label=docs)
+![CI status](https://img.shields.io/github/workflow/status/HertzDevil/hexfloat.cr/CI)
+[![Docs status](https://img.shields.io/github/deployments/HertzDevil/hexfloat.cr/github-pages?label=docs)](https://hertzdevil.github.io/hexfloat.cr/index.html)
 ![License](https://img.shields.io/github/license/HertzDevil/hexfloat.cr)
 
 Provides conversion functions between hexadecimal floating-point literals and
 floating-point values.
+
+[Documentation](https://hertzdevil.github.io/hexfloat.cr/index.html)
 
 ## Installation
 
