@@ -21,7 +21,10 @@ floating-point values.
 require "hexfloat"
 
 HexFloat.to_f64("0x12.34p+5")    # => 582.5
-HexFloat.to_f32("0x3.333334p+1") # => 6.4
+HexFloat.to_f32("0x3.333334p+1") # => 6.4_f32
+
+HexFloat.to_f("0x12.34p+5")    # => 582.5
+HexFloat.to_f("0x12.34p+5f32") # => 582.5_f32
 
 HexFloat.to_s(6.125)      # => "0x1.88p+2"
 HexFloat.to_s(-1_f32 / 3) # => "-0x1.555556p-2"

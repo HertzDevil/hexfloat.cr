@@ -272,6 +272,13 @@ module HexFloat
   # `f32`, a `Float64` otherwise.
   #
   # *str* must be a string literal. The return type is never a union.
+  #
+  # ```
+  # x = HexFloat.to_f("0x12.34p+5")     # => 582.5
+  # x.class                             # => Float64
+  # x = HexFloat.to_f("0x12.34p+5_f32") # => 582.5
+  # x.class                             # => Float32
+  # ```
   macro to_f(str)
     {% raise "`str` must be a StringLiteral, not #{str.class_name}" unless str.is_a?(StringLiteral) %}
     {% if str.ends_with?("f32") %}
