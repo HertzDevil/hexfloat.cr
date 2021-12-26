@@ -240,7 +240,7 @@ module HexFloat
 
   # Converts a hexadecimal floating-point literal to a `Float64`.
   #
-  # The literal must match `/\A-?0x[0-9A-Fa-f]+(\.[0-9A-Fa-f]+)?p(+-)?[0-9]+(_?f64)?\z/`.
+  # The literal must match `/\A-?0x[0-9A-Fa-f]+(\.[0-9A-Fa-f]+)?p([+-])?[0-9]+(_?f64)?\z/`.
   # Inexact literals are rounded to the nearest representable `Float64`, ties-to-even.
   #
   # Does not support infinity and not-a-number.
@@ -255,7 +255,7 @@ module HexFloat
 
   # Converts a hexadecimal floating-point literal to a `Float32`.
   #
-  # The literal must match `/\A-?0x[0-9A-Fa-f]+(\.[0-9A-Fa-f]+)?p(+-)?[0-9]+(_?f32)?\z/`.
+  # The literal must match `/\A-?0x[0-9A-Fa-f]+(\.[0-9A-Fa-f]+)?p([+-])?[0-9]+(_?f32)?\z/`.
   # Inexact literals are rounded to the nearest representable `Float32`, ties-to-even.
   #
   # Does not support infinity and not-a-number.
