@@ -1,6 +1,9 @@
 # hexfloat.cr
 
-![CI status](https://img.shields.io/github/workflow/status/HertzDevil/hexfloat.cr/CI)
+**This shard is now archived as the functionality is now available in Crystal
+1.11 since [crystal-lang/crystal#14027](https://github.com/crystal-lang/crystal/pull/14027)**.
+
+![CI status](https://img.shields.io/github/actions/workflow/status/HertzDevil/hexfloat.cr/ci.yml?branch=main)
 [![Docs status](https://img.shields.io/github/deployments/HertzDevil/hexfloat.cr/github-pages?label=docs)](https://hertzdevil.github.io/hexfloat.cr/index.html)
 ![License](https://img.shields.io/github/license/HertzDevil/hexfloat.cr)
 
